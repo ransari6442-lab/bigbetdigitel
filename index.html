@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BIGBET Official</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Auto Redirect -->
@@ -19,155 +16,87 @@
   </script>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{
+      min-height:100vh;
+      background:radial-gradient(circle at top,#1b1b2f,#0b0b14);
+      display:flex;align-items:center;justify-content:center;color:#fff
     }
+    .card{
+      max-width:420px;width:100%;
+      background:linear-gradient(145deg,#141428,#0e0e1c);
+      border-radius:18px;padding:28px 22px;text-align:center;
+      box-shadow:0 15px 40px rgba(0,0,0,.7)
+    }
+    .logo{
+      width:90px;height:90px;border-radius:50%;
+      border:3px solid #ffcc00;object-fit:cover;
+      box-shadow:0 0 18px rgba(255,204,0,.8);
+      margin-bottom:12px
+    }
+    .badge{
+      display:inline-block;background:#ffcc00;color:#000;
+      font-size:.75rem;font-weight:700;padding:4px 12px;
+      border-radius:50px;margin-bottom:10px
+    }
+    h1{font-size:2.1rem;margin-bottom:6px}
+    h1 span{color:#ffcc00}
+    p{font-size:.95rem;color:#d7d7e2;margin-bottom:14px}
 
-    body {
-      min-height: 100vh;
-      background: radial-gradient(circle at top, #1b1b2f, #0b0b14);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
+    /* 🔥 OFFERS */
+    .offers{
+      display:grid;grid-template-columns:1fr;gap:10px;
+      margin:16px 0 18px
     }
+    .offer{
+      background:rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:12px;padding:10px 12px;
+      display:flex;align-items:center;gap:10px;
+      font-size:.9rem
+    }
+    .offer i{color:#00c6ff;font-size:1.1rem}
 
-    .card {
-      width: 100%;
-      max-width: 420px;
-      background: linear-gradient(145deg, #141428, #0e0e1c);
-      border-radius: 18px;
-      padding: 32px 22px;
-      text-align: center;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.7);
-    }
+    .countdown{color:#ffcc00;font-size:.85rem;margin-bottom:14px}
 
-    /* 🔥 LOGO WITH GLOW */
-    .logo {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #ffcc00;
-      margin-bottom: 14px;
-      box-shadow: 0 0 15px rgba(255,204,0,0.6);
-      animation: glow 2.5s infinite alternate;
+    .btn{
+      display:flex;align-items:center;justify-content:center;gap:10px;
+      width:100%;padding:14px;border-radius:12px;
+      background:linear-gradient(90deg,#0088cc,#00b7ff);
+      color:#fff;text-decoration:none;font-weight:600;
+      box-shadow:0 0 18px rgba(0,136,204,.7)
     }
-
-    @keyframes glow {
-      from {
-        box-shadow: 0 0 10px rgba(255,204,0,0.4);
-      }
-      to {
-        box-shadow: 0 0 22px rgba(255,204,0,0.9);
-      }
-    }
-
-    .badge {
-      display: inline-block;
-      background: #ffcc00;
-      color: #000;
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 4px 12px;
-      border-radius: 50px;
-      margin-bottom: 10px;
-    }
-
-    h1 {
-      font-size: 2.1rem;
-      margin-bottom: 8px;
-    }
-
-    h1 span {
-      color: #ffcc00;
-      text-shadow: 0 0 8px rgba(255,204,0,0.6);
-    }
-
-    p {
-      font-size: 0.95rem;
-      line-height: 1.6;
-      color: #d7d7e2;
-      margin-bottom: 16px;
-    }
-
-    .countdown {
-      color: #ffcc00;
-      font-size: 0.9rem;
-      margin-bottom: 18px;
-    }
-
-    /* 🔥 BUTTON GLOW */
-    .btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      width: 100%;
-      padding: 14px;
-      background: linear-gradient(90deg, #0088cc, #00b7ff);
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.1rem;
-      font-weight: 600;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,136,204,0.6);
-      animation: btnGlow 2s infinite alternate;
-    }
-
-    @keyframes btnGlow {
-      from {
-        box-shadow: 0 0 12px rgba(0,136,204,0.5);
-      }
-      to {
-        box-shadow: 0 0 25px rgba(0,183,255,0.9);
-      }
-    }
-
-    .btn i {
-      font-size: 1.3rem;
-    }
-
-    .note {
-      margin-top: 18px;
-      font-size: 0.75rem;
-      opacity: 0.7;
-    }
+    .note{margin-top:16px;font-size:.72rem;opacity:.7}
   </style>
 </head>
 <body>
 
-  <div class="card">
+<div class="card">
+  <img src="https://i.ibb.co/7NZC3vYj/Screenshot-2026-01-01-102527.png" class="logo">
 
-    <!-- LOGO -->
-    <img src="https://i.ibb.co/7NZC3vYj/Screenshot-2026-01-01-102527.png" class="logo" alt="BIGBET Logo">
+  <div class="badge">OFFICIAL CHANNEL</div>
+  <h1><span>BIGBET</span>  </h1>
 
-    <div class="badge">OFFICIAL CHANNEL</div>
+  <p>Daily updates, trusted results & special bonus alerts.</p>
 
-    <h1><span>BIGBET</span> Digital</h1>
-
-    <p>
-      You will be redirected to our official Telegram channel automatically.
-    </p>
-
-    <div class="countdown">
-      ⏳ Redirecting in 3 seconds…
-    </div>
-
-    <a href="https://t.me/+gi2sprdEXthiMTRl" target="_blank" class="btn">
-      <i class="fa-brands fa-telegram"></i> Join Telegram Now
-    </a>
-
-    <div class="note">
-      ⚠️ For informational purposes only.
-    </div>
-
+  <!-- 🔥 OFFERS SECTION -->
+  <div class="offers">
+    <div class="offer"><i class="fa-solid fa-shield-heart"></i> Loss Recover Support</div>
+    <div class="offer"><i class="fa-solid fa-gift"></i> Free Gift Code</div>
+    <div class="offer"><i class="fa-solid fa-coins"></i> Free Deposit Bonus</div>
   </div>
+
+  <div class="countdown">⏳ Redirecting to Telegram in 3 seconds…</div>
+
+  <a href="https://t.me/+gi2sprdEXthiMTRl" target="_blank" class="btn">
+    <i class="fa-brands fa-telegram"></i> Join Telegram Now
+  </a>
+
+  <div class="note">⚠️ For informational purposes only. Bonuses subject to terms.</div>
+</div>
 
 </body>
 </html>
+
 
 
